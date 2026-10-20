@@ -1,5 +1,49 @@
-br {
-    display: block;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+/*import all fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Leckerli+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+--primary-font: 'Roboto', sans-serif;
+--secondary-font: 'Faculty Glyphic', serif;
+--special-font: 'Leckerli One', cursive;
+--near-white: #FAF9F6;
+--beige: #E6DED4;
+--soft-tan: #C8B39A;
+--neutral-brown: #8F7A67;
+--deep-accent-brown: #4e4035;
+}
+
+body {
+    margin: 0;
+    background-color: var(--near-white);
+    background-color: var(--beige);
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--neutral-brown);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: var(--deep-accent-brown);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+/* Styles for the navigation links */
+.navbar > a {
+  color: var(--near-white);
+  text-decoration: none;
+  font-family: var(--primary-font);
+}
+
+.navbar > a:hover {
+  color: #000;
+  transition: color 0.3s ease;
 }
