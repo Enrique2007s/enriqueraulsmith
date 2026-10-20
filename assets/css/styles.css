@@ -21,9 +21,18 @@ body {
 
 h1 {
   font-family: 'Roboto', sans-serif;
+  color: var(--deep-accent-brown) !important;
+  margin: 0;
+  padding: 0;
+  font-size: 4em !important;
+}
+
+h2 {
+  font-family: 'Faculty Glyphic', serif;
   color: var(--neutral-brown);
   margin: 0;
   padding: 0;
+  font-size: 2em !important;
 }
 
 .navbar {
@@ -33,7 +42,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 /* Styles for the navigation links */
@@ -46,4 +55,33 @@ h1 {
 .navbar > a:hover {
   color: #000;
   transition: color 0.3s ease;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: var(--soft-tan);
+}
+
+.hero-title {
+  font-family: var(--secondary-font);
+  font-size: 2.5em;
+  color: var(--neutral-brown);
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-family: var(--special-font);
+  font-size: 4em !important;
+  color: var(--deep-accent-brown);
+}
+
+.navbar > div {
+    position: absolute;
+    left: 20px;
+    font-family: var(--special-font);
+    font-size: 1.5em;
+    color: var(--near-white);
+    margin-right: 20px;
+    margin-top: -30px;
 }
